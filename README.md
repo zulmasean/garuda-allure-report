@@ -1,0 +1,1 @@
+# garuda-allure-report
