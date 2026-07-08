@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allure Report History</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --header-bg: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            --bg-color: #f4f7f6;
+            --text-main: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 650px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--header-bg);
+            color: white;
+            padding: 24px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .header svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .search-container {
+            padding: 20px 24px 10px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #searchInput:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(76,175,80,0.15);
+        }
+
+        .history-list {
+            list-style: none;
+            padding: 10px 24px 24px;
+            margin: 0;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .history-list li {
+            margin-bottom: 12px;
+            transition: transform .2s ease;
+        }
+
+        .history-list li:hover {
+            transform: translateY(-2px);
+        }
+
+        .history-list a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-main);
+            background: #fff;
+            padding: 16px 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: all .2s ease;
+        }
+
+        .history-list a:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(76,175,80,.1);
+        }
+
+        .build-number {
+            font-size: 16px;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+
+        .view-btn {
+            font-size: 13px;
+            color: var(--primary);
+            background: rgba(76,175,80,.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            display: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>
+            <svg viewBox="0 0 24 24">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+            Allure Report History
+        </h2>
+    </div>
+
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari Build #..."
+            onkeyup="filterBuilds()">
+    </div>
+
+    <ul class="history-list" id="historyList">
+    <li>
+        <a href="reports/111/index.html">
+            <span class="build-number">Build #111</span>
+            <span class="view-btn">Lihat Report</span>
+        </a>
+    </li>
+    </ul>
+
+    <div class="no-results" id="noResults">
+        Build tidak ditemukan...
+    </div>
+</div>
+
+<script>
+    function filterBuilds() {
+        const input = document.getElementById("searchInput");
+        const filter = input.value.toUpperCase();
+        const ul = document.getElementById("historyList");
+        const li = ul.getElementsByTagName("li");
+        let hasResults = false;
+
+        for (let i = 0; i < li.length; i++) {
+            const a = li[i].getElementsByTagName("a")[0];
+            const txtValue = a.textContent || a.innerText;
+
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                hasResults = true;
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+
+        document.getElementById("noResults").style.display =
+            hasResults ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
