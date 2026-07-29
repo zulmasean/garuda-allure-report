@@ -1,0 +1,40 @@
+<div>POST to https://reborn-bck-api.gdpay.id/backoffice-auth/web/backoffice/overbooking/special</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXN0dXJ5QGNyZWVweS5wYXN0YSIsImlhdCI6MTc4NTMwMjE2NiwiZXhwIjoxNzg1MzM4MTY2fQ.Wt5--rwdOjt8_X50jZCZUy_o4QGKTelG1sQprpTxANo</div>
+        <div>x-real-ip: 103.236.190.5</div>
+        <div>Accept: */*</div>
+        <div>pbyv: /Xci3BKwiVCvyk2Fh2hS+/B337gGM3NJi6csLi3pu0q6pbmYU4dBUFqIXYS/jV0BXy9i1f1juw+QYcNG+7WOwKotviSGIcwQ</div>
+        <div>Accept-Language: id</div>
+        <div>deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs</div>
+        <div>userId: 69e6fa62f1eecd0ca7918819</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://reborn-bck-api.gdpay.id/backoffice-auth/web/backoffice/overbooking/special&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXN0dXJ5QGNyZWVweS5wYXN0YSIsImlhdCI6MTc4NTMwMjE2NiwiZXhwIjoxNzg1MzM4MTY2fQ.Wt5--rwdOjt8_X50jZCZUy_o4QGKTelG1sQprpTxANo&#39; -H &#39;x-real-ip: 103.236.190.5&#39; -H &#39;Accept: */*&#39; -H &#39;pbyv: /Xci3BKwiVCvyk2Fh2hS+/B337gGM3NJi6csLi3pu0q6pbmYU4dBUFqIXYS/jV0BXy9i1f1juw+QYcNG+7WOwKotviSGIcwQ&#39; -H &#39;Accept-Language: id&#39; -H &#39;deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs&#39; -H &#39;userId: 69e6fa62f1eecd0ca7918819&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}&#39;
+</div>
