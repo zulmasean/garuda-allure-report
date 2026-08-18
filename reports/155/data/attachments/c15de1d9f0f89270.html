@@ -1,0 +1,45 @@
+<div>POST to https://reborn-api.gdpay.id/internal-auth/web/company/management/transaction</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>x-latitude: 0.0</div>
+        <div>Accept: */*</div>
+        <div>deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs</div>
+        <div>userId: 6a60800f760bc3526a752c4b</div>
+        <div>x-real-ip: 103.236.190.5</div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcnZpc29yYXV0b21hdGlvbnFyQGdtYWlsLmNvbSIsImlhdCI6MTc4NzAzMTQ0OCwiZXhwIjoxNzg3MDY3NDQ4fQ.wlX13SXTtHV2l-HC4WW3dVfbKvt9FV8c8rPSg3bsvMA</div>
+        <div>companyId: 69e8573a870ebc43070a4566</div>
+        <div>x-longitude: 0.0</div>
+        <div>ip-private: 103.236.190.5</div>
+        <div>credentialId: 69e19d7ada790478a03c693d</div>
+        <div>znynz: m4sVQAKuPHjVbXeRS78CZv3AF+hjm0Qpyj59NBbS1xwFEG5oEHDjlQ==</div>
+        <div>Accept-Language: en</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://reborn-api.gdpay.id/internal-auth/web/company/management/transaction&#39; -H &#39;x-latitude: 0.0&#39; -H &#39;Accept: */*&#39; -H &#39;deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs&#39; -H &#39;userId: 6a60800f760bc3526a752c4b&#39; -H &#39;x-real-ip: 103.236.190.5&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcnZpc29yYXV0b21hdGlvbnFyQGdtYWlsLmNvbSIsImlhdCI6MTc4NzAzMTQ0OCwiZXhwIjoxNzg3MDY3NDQ4fQ.wlX13SXTtHV2l-HC4WW3dVfbKvt9FV8c8rPSg3bsvMA&#39; -H &#39;companyId: 69e8573a870ebc43070a4566&#39; -H &#39;x-longitude: 0.0&#39; -H &#39;ip-private: 103.236.190.5&#39; -H &#39;credentialId: 69e19d7ada790478a03c693d&#39; -H &#39;znynz: m4sVQAKuPHjVbXeRS78CZv3AF+hjm0Qpyj59NBbS1xwFEG5oEHDjlQ==&#39; -H &#39;Accept-Language: en&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}&#39;
+</div>

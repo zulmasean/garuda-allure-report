@@ -1,0 +1,71 @@
+<div>POST to https://reborn-bck-api.gdpay.id/backoffice-auth/web/cs/admin/company/update/data</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;transferRtol&quot;: 350000000,
+    &quot;transferUsdt&quot;: 1000000000,
+    &quot;whitelists&quot;: [
+        {
+            &quot;ip&quot;: &quot;1.1.1.1&quot;
+        },
+        {
+            &quot;ip&quot;: &quot;123.212.123.1&quot;
+        }
+    ],
+    &quot;pinValidasi&quot;: &quot;123123&quot;,
+    &quot;whitelistsuser&quot;: [
+        {
+            &quot;whitelistsuser&quot;: &quot;kentut@gmail.com&quot;
+        },
+        {
+            &quot;whitelistsuser&quot;: &quot;ayamayaman@gmail.com&quot;
+        }
+    ],
+    &quot;transferTrx&quot;: 1000000000,
+    &quot;transferSpc&quot;: 1000500000
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjc2FkbWluenVsbWFAZ21haWwuY29tIiwiaWF0IjoxNzg3MDM1NzQ5LCJleHAiOjE3ODcwNzE3NDl9.sn2qUdCILfcLhDqH2igpMf6OuFqunQi5GKeVgl9P-98</div>
+        <div>x-real-ip: 103.236.190.5</div>
+        <div>companyId: 6a62e34d760bc3526a752c4f</div>
+        <div>Accept: */*</div>
+        <div>Accept-Language: id</div>
+        <div>powis: aoQFNSdC2e3hmkBcpBtS+ktKh3p3bEk3r4OkEfeBeIRBm0z0BLI58FmGDZ6ChsMGIz27XftfKWrk6w8+BvWxZ9W5248ZoAb1</div>
+        <div>deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs</div>
+        <div>userId: 6a4cb9ffd273151cddc2db74</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://reborn-bck-api.gdpay.id/backoffice-auth/web/cs/admin/company/update/data&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjc2FkbWluenVsbWFAZ21haWwuY29tIiwiaWF0IjoxNzg3MDM1NzQ5LCJleHAiOjE3ODcwNzE3NDl9.sn2qUdCILfcLhDqH2igpMf6OuFqunQi5GKeVgl9P-98&#39; -H &#39;x-real-ip: 103.236.190.5&#39; -H &#39;companyId: 6a62e34d760bc3526a752c4f&#39; -H &#39;Accept: */*&#39; -H &#39;Accept-Language: id&#39; -H &#39;powis: aoQFNSdC2e3hmkBcpBtS+ktKh3p3bEk3r4OkEfeBeIRBm0z0BLI58FmGDZ6ChsMGIz27XftfKWrk6w8+BvWxZ9W5248ZoAb1&#39; -H &#39;deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs&#39; -H &#39;userId: 6a4cb9ffd273151cddc2db74&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;transferRtol&quot;: 350000000,
+    &quot;transferUsdt&quot;: 1000000000,
+    &quot;whitelists&quot;: [
+        {
+            &quot;ip&quot;: &quot;1.1.1.1&quot;
+        },
+        {
+            &quot;ip&quot;: &quot;123.212.123.1&quot;
+        }
+    ],
+    &quot;pinValidasi&quot;: &quot;123123&quot;,
+    &quot;whitelistsuser&quot;: [
+        {
+            &quot;whitelistsuser&quot;: &quot;kentut@gmail.com&quot;
+        },
+        {
+            &quot;whitelistsuser&quot;: &quot;ayamayaman@gmail.com&quot;
+        }
+    ],
+    &quot;transferTrx&quot;: 1000000000,
+    &quot;transferSpc&quot;: 1000500000
+}&#39;
+</div>
