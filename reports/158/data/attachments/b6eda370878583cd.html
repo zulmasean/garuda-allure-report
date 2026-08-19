@@ -1,0 +1,100 @@
+<div>POST to https://reborn-open.gdpay.id/integration-pg/qris/snap/v1/piye/notify</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;amountSend&quot;: 1000000,
+    &quot;charges&quot;: 0,
+    &quot;clientId&quot;: &quot;3a47c504-e703-48ff-bcd8-8f04f82fa309&quot;,
+    &quot;TX&quot;: &quot;W5tcvmJtAxV6n6bmSUZQ&quot;,
+    &quot;attachment&quot;: {
+        &quot;amount&quot;: {
+            &quot;currency&quot;: &quot;IDR&quot;,
+            &quot;value&quot;: &quot;1.00&quot;
+        },
+        &quot;originalReferenceNo&quot;: &quot;01310376465988&quot;,
+        &quot;mpan&quot;: &quot;936005032250000069&quot;,
+        &quot;latestTransactionStatus&quot;: &quot;00&quot;,
+        &quot;additionalInfo&quot;: {
+            &quot;issuerId&quot;: &quot;93600914&quot;,
+            &quot;subMerchantId&quot;: &quot;25111700001538&quot;,
+            &quot;merchantId&quot;: &quot;936005032250000069&quot;,
+            &quot;payerPhoneNumber&quot;: &quot;9360091430290878493&quot;,
+            &quot;nettAmount&quot;: &quot;0.99&quot;,
+            &quot;payerName&quot;: &quot;GOPAY&quot;,
+            &quot;callbackUrl&quot;: &quot;https://us-central1-piye-95c18.cloudfunctions.net/notifyqrisnobu2gen/v1.0/qr/qr-mpm-notify&quot;,
+            &quot;retrievalReferenceNo&quot;: &quot;1l0nmen98930&quot;,
+            &quot;paymentReferenceNo&quot;: &quot;IADZ5RQOFJAN&quot;,
+            &quot;paymentDate&quot;: &quot;2026-01-22 16:23:14&quot;,
+            &quot;billNumber&quot;: &quot;M8UPJCSJ&quot;
+        },
+        &quot;originalPartnerReferenceNo&quot;: &quot;2608191330432840830013561&quot;,
+        &quot;transactionStatusDesc&quot;: &quot;Success&quot;,
+        &quot;externalStoreId&quot;: &quot;ID2025455070347&quot;,
+        &quot;nmid&quot;: &quot;ID2025455070347&quot;,
+        &quot;terminalId&quot;: &quot;A01&quot;,
+        &quot;destinationNumber&quot;: &quot;9360091430290878493&quot;,
+        &quot;destinationAccountName&quot;: &quot;GOPAY&quot;
+    },
+    &quot;orderId&quot;: &quot;2608191330432840830013561&quot;,
+    &quot;signature&quot;: &quot;b48f80e05ebf3438c1d15e928d31b623&quot;,
+    &quot;callbackClient&quot;: &quot;https://open.garudareborn.com/integration-pg/qris/snap/v1/piye/notify&quot;,
+    &quot;id&quot;: &quot;W5tcvmJtAxV6n6bmSUZQ-W5tcvmJtAxV6n6bmSUZQ&quot;,
+    &quot;paymentStatus&quot;: &quot;Success&quot;,
+    &quot;timestamp&quot;: 1769073794729
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://reborn-open.gdpay.id/integration-pg/qris/snap/v1/piye/notify&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;amountSend&quot;: 1000000,
+    &quot;charges&quot;: 0,
+    &quot;clientId&quot;: &quot;3a47c504-e703-48ff-bcd8-8f04f82fa309&quot;,
+    &quot;TX&quot;: &quot;W5tcvmJtAxV6n6bmSUZQ&quot;,
+    &quot;attachment&quot;: {
+        &quot;amount&quot;: {
+            &quot;currency&quot;: &quot;IDR&quot;,
+            &quot;value&quot;: &quot;1.00&quot;
+        },
+        &quot;originalReferenceNo&quot;: &quot;01310376465988&quot;,
+        &quot;mpan&quot;: &quot;936005032250000069&quot;,
+        &quot;latestTransactionStatus&quot;: &quot;00&quot;,
+        &quot;additionalInfo&quot;: {
+            &quot;issuerId&quot;: &quot;93600914&quot;,
+            &quot;subMerchantId&quot;: &quot;25111700001538&quot;,
+            &quot;merchantId&quot;: &quot;936005032250000069&quot;,
+            &quot;payerPhoneNumber&quot;: &quot;9360091430290878493&quot;,
+            &quot;nettAmount&quot;: &quot;0.99&quot;,
+            &quot;payerName&quot;: &quot;GOPAY&quot;,
+            &quot;callbackUrl&quot;: &quot;https://us-central1-piye-95c18.cloudfunctions.net/notifyqrisnobu2gen/v1.0/qr/qr-mpm-notify&quot;,
+            &quot;retrievalReferenceNo&quot;: &quot;1l0nmen98930&quot;,
+            &quot;paymentReferenceNo&quot;: &quot;IADZ5RQOFJAN&quot;,
+            &quot;paymentDate&quot;: &quot;2026-01-22 16:23:14&quot;,
+            &quot;billNumber&quot;: &quot;M8UPJCSJ&quot;
+        },
+        &quot;originalPartnerReferenceNo&quot;: &quot;2608191330432840830013561&quot;,
+        &quot;transactionStatusDesc&quot;: &quot;Success&quot;,
+        &quot;externalStoreId&quot;: &quot;ID2025455070347&quot;,
+        &quot;nmid&quot;: &quot;ID2025455070347&quot;,
+        &quot;terminalId&quot;: &quot;A01&quot;,
+        &quot;destinationNumber&quot;: &quot;9360091430290878493&quot;,
+        &quot;destinationAccountName&quot;: &quot;GOPAY&quot;
+    },
+    &quot;orderId&quot;: &quot;2608191330432840830013561&quot;,
+    &quot;signature&quot;: &quot;b48f80e05ebf3438c1d15e928d31b623&quot;,
+    &quot;callbackClient&quot;: &quot;https://open.garudareborn.com/integration-pg/qris/snap/v1/piye/notify&quot;,
+    &quot;id&quot;: &quot;W5tcvmJtAxV6n6bmSUZQ-W5tcvmJtAxV6n6bmSUZQ&quot;,
+    &quot;paymentStatus&quot;: &quot;Success&quot;,
+    &quot;timestamp&quot;: 1769073794729
+}&#39;
+</div>
