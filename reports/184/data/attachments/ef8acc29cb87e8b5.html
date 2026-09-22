@@ -1,0 +1,40 @@
+<div>POST to https://reborn-api.gdpay.id/internal-auth/web/admin/overbooking/cash-deposit</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6dWxtYWNyeXB0b0BnbWFpbC5jb20iLCJpYXQiOjE3OTAwNDkxMjEsImV4cCI6MTc5MDA4NTEyMX0.Myxug97Co8KCKdd9yftJV5a5V79zqr3nG9f6MSW4BXM</div>
+        <div>x-real-ip: 103.236.190.5</div>
+        <div>Accept: */*</div>
+        <div>Accept-Language: id</div>
+        <div>whzng: yLb7gZR968q3Q11Bt1o/Wh1eFEQk/9vYPH4/B+kDwxRaalYzb5Hpjy1JXzu984tAL7rxzhLJ4Crm9xBkASmlj6c3Hm5Kxtz6</div>
+        <div>deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs</div>
+        <div>userId: 69eb37cee7dfb31e27ca7ca1</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://reborn-api.gdpay.id/internal-auth/web/admin/overbooking/cash-deposit&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6dWxtYWNyeXB0b0BnbWFpbC5jb20iLCJpYXQiOjE3OTAwNDkxMjEsImV4cCI6MTc5MDA4NTEyMX0.Myxug97Co8KCKdd9yftJV5a5V79zqr3nG9f6MSW4BXM&#39; -H &#39;x-real-ip: 103.236.190.5&#39; -H &#39;Accept: */*&#39; -H &#39;Accept-Language: id&#39; -H &#39;whzng: yLb7gZR968q3Q11Bt1o/Wh1eFEQk/9vYPH4/B+kDwxRaalYzb5Hpjy1JXzu984tAL7rxzhLJ4Crm9xBkASmlj6c3Hm5Kxtz6&#39; -H &#39;deviceId: 7429fe2d-824f-43b1-8be0-9d3478e773ccs&#39; -H &#39;userId: 69eb37cee7dfb31e27ca7ca1&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}&#39;
+</div>
