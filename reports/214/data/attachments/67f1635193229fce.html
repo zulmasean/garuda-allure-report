@@ -1,0 +1,38 @@
+<div>POST to https://reborn-api.gdpay.id/internal-auth/web/company/overbooking/ppob/data/list</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRvazI2MjY4QGRlYXBhZC5jb20iLCJpYXQiOjE3OTMwMDA0NTMsImV4cCI6MTc5MzAzNjQ1M30.inA33LKPVbrzNuMwTue8e08Yzs8i4VbOU147zWOIW1w</div>
+        <div>companyId: 6a1e987f219fa63f8e351d95</div>
+        <div>Accept: */*</div>
+        <div>znynz: +1O4d6nUkgKtbFuarVCOOiAacQVPz4N61PIEPCBw6I/trxp1GCMcFQ==</div>
+        <div>userId: 6a1e987f219fa63f8e351d94</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://reborn-api.gdpay.id/internal-auth/web/company/overbooking/ppob/data/list&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRvazI2MjY4QGRlYXBhZC5jb20iLCJpYXQiOjE3OTMwMDA0NTMsImV4cCI6MTc5MzAzNjQ1M30.inA33LKPVbrzNuMwTue8e08Yzs8i4VbOU147zWOIW1w&#39; -H &#39;companyId: 6a1e987f219fa63f8e351d95&#39; -H &#39;Accept: */*&#39; -H &#39;znynz: +1O4d6nUkgKtbFuarVCOOiAacQVPz4N61PIEPCBw6I/trxp1GCMcFQ==&#39; -H &#39;userId: 6a1e987f219fa63f8e351d94&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;enablePage&quot;: true,
+    &quot;size&quot;: 1,
+    &quot;limit&quot;: 1,
+    &quot;sort&quot;: &quot;createdDate==desc&quot;,
+    &quot;page&quot;: 0,
+    &quot;reverse&quot;: false
+}&#39;
+</div>
