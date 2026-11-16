@@ -1,1 +1,1 @@
-{"reportName":"GarudaPay Report","testRuns":[],"statistic":{"failed":160,"broken":9,"skipped":9,"passed":1546,"unknown":0,"total":1724},"time":{"start":1794467265461,"stop":1794480064115,"duration":12798654,"minDuration":1388,"maxDuration":59771,"sumDuration":8329766}}
+{"reportName":"GarudaPay Report","testRuns":[],"statistic":{"failed":243,"broken":9,"skipped":4,"passed":1523,"unknown":0,"total":1779},"time":{"start":1794804456283,"stop":1794817995260,"duration":13538977,"minDuration":1385,"maxDuration":62101,"sumDuration":8833595}}
